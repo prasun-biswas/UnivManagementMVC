@@ -1,0 +1,56 @@
+﻿@using UniversityMnagementSystemMVC.Models
+@{
+    ViewBag.Title = "ABC University";
+}
+
+<div >
+    <h1>ABC University</h1>
+    <p class="lead">It's a mangagement system of a Unviersity, here you can manage any university</p>
+</div>
+
+<div class="row">
+    <h1>Management Links</h1>
+    <table class="table">
+        <tr>
+            <td>
+                @Html.ActionLink("Department Entry","Create","Department",null,new{@class="btn btn-primary"})
+            </td>
+            <td>
+                @Html.ActionLink("View all department", "Index", "Department", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Course Create", "Create", "Course", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Teacher Entry", "Create", "Teacher", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Course Assign To Teacher", "Create", "CourseAssignToTeachers", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Allocate Class Room", "Create", "AllocateClassRooms", null, new { @class = "btn btn-primary" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.ActionLink("View Courses", "Index", "Course", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Student Registration Process", "Create", "Students", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Entroll In A Course", "Create", "EnrollInACourses", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Result Entry", "Create", "Results", null, new { @class = "btn btn-primary" })
+            </td>
+            <td>
+                @Html.ActionLink("Result View", "Index", "Results", null, new { @class = "btn btn-primary" })<br/>
+                <label>To see effect add Index to Url</label>
+            </td>
+            <td>
+                @Html.ActionLink("Schedule and Room Allocation", "Index", "AllocateClassRooms", null, new { @class = "btn btn-primary" })
+            </td>
+        </tr>
+    </table>
+</div>

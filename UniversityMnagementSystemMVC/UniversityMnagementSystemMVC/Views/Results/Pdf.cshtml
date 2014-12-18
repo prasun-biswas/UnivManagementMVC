@@ -1,0 +1,90 @@
+﻿@using UniversityMnagementSystemMVC.Models
+@model Tuple<Student, IEnumerable<Result>>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration No: @Model.Item1.RegNo</title>
+</head>
+<body>
+    <div>
+        <br/><br/>
+        <h1>Result Sheet</h1>
+        @if (Model.Item1 != null)
+        {
+            <div>
+                <div class="col-lg-7">
+                    <table class="table">
+                        <tr>
+                            
+                            <th>
+                                Name: @Html.DisplayFor(model => model.Item1.Name)
+                            </th>
+                        </tr>
+
+                        <tr>
+                            
+
+                            <th>
+                                Email: @Html.DisplayFor(model => model.Item1.Email)
+                            </th>
+                        </tr>
+
+
+                        <tr>
+                            <th>
+                                Department: @Html.DisplayFor(model => model.Item1.Department.Code)
+                            </th>
+                        </tr>
+
+                    </table>
+                </div>
+                
+            </div>
+        }
+        @if (Model.Item2 != null)
+        {
+            <div>
+                <table class="table">
+                    <tr>
+                        <th>
+                            <label>Course Code</label>
+                        </th>
+                        <th>
+                            <label>Course Name</label>
+                        </th>
+                        <th>
+                            <label>Grade</label>
+                        </th>
+                    </tr>
+
+                    @foreach (var item in Model.Item2)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Course.Code)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Course.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Grade)
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        }
+        else
+        {
+            <div><p>No result to show</p></div>
+        }
+    </div>
+</body>
+</html>

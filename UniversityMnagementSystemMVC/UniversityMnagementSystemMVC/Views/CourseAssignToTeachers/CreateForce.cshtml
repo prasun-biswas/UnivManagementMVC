@@ -1,0 +1,71 @@
+﻿@model UniversityMnagementSystemMVC.Models.CourseAssignToTeacher
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+
+<h2>Create</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>CourseAssignToTeacher</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.DeptId, "Department Code", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("DeptId", null, "--Select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DeptId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CourseId, "Course Code", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CourseId", null, "--Select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CourseId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.TeacherId, "Teacher's name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("TeacherId", null,"--Select--",new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.TeacherId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+       
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Assing" class="btn btn-success" />
+                @if (ViewBag.noCredit != null)
+                {
+                    <label style="color: red">@ViewBag.noCredit</label>
+                }
+            </div>
+        </div>
+        
+        @if (Model != null)
+        {
+            <div>
+                @Html.Partial("_ForceCourseAssignToTeacherPartial", Model)
+            </div>
+        }
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

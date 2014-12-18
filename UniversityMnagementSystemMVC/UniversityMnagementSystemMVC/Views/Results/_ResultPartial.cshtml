@@ -1,0 +1,43 @@
+﻿@using UniversityMnagementSystemMVC.Models
+@model IEnumerable<Result>
+
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            <label>Course Code</label>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Grade)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.Code)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+           
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ResultId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ResultId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ResultId })
+            </td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,25 @@
+﻿@model UniversityMnagementSystemMVC.Models.Teacher
+
+<div>
+  
+    <dl class="dl-horizontal">
+       
+
+        <dt>
+            <label>Credit to be taken</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditTobeTaken)
+        </dd>
+
+        <dt>
+            <label> Credit remain</label>
+        </dt>
+        <dd>
+            @ViewBag.creditRemain
+        </dd>
+
+    </dl>
+</div>
+

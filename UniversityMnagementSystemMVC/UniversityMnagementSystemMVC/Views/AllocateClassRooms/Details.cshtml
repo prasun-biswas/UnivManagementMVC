@@ -1,0 +1,58 @@
+﻿@model UniversityMnagementSystemMVC.Models.AllocateClassRoom
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AllocateClassRoom</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FromTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoomNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoomNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.Code)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AllocateClassRoomId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

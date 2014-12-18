@@ -1,0 +1,93 @@
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.dll.config
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.pdb
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Antlr3.Runtime.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.SqlServer.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Microsoft.Web.Infrastructure.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Newtonsoft.Json.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Helpers.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Mvc.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Optimization.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Razor.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Deployment.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Razor.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\WebGrease.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.SqlServer.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Helpers.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Mvc.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Optimization.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Razor.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Deployment.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Razor.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Antlr3.Runtime.pdb
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Newtonsoft.Json.xml
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.csprojResolveAssemblyReference.cache
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.dll
+c:\users\mjs\documents\visual studio 2013\Projects\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.pdb
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.dll.config
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.pdb
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Antlr3.Runtime.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.SqlServer.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Microsoft.Web.Infrastructure.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Newtonsoft.Json.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Helpers.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Mvc.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Optimization.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Razor.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Deployment.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Razor.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\WebGrease.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.SqlServer.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Helpers.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Mvc.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Optimization.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Razor.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Deployment.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Razor.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Antlr3.Runtime.pdb
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Newtonsoft.Json.xml
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.pdb
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\itextsharp.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\RazorPDF.dll
+J:\Project\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.csprojResolveAssemblyReference.cache
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.dll.config
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\UniversityMnagementSystemMVC.pdb
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Antlr3.Runtime.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.SqlServer.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\itextsharp.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Microsoft.Web.Infrastructure.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Newtonsoft.Json.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\RazorPDF.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Helpers.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Mvc.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Optimization.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Razor.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Deployment.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Razor.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\WebGrease.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\EntityFramework.SqlServer.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Helpers.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Mvc.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Optimization.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.Razor.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Deployment.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\System.Web.WebPages.Razor.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Antlr3.Runtime.pdb
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\bin\Newtonsoft.Json.xml
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.dll
+F:\university final\UniversityMnagementSystemMVC\UniversityMnagementSystemMVC\obj\Debug\UniversityMnagementSystemMVC.pdb

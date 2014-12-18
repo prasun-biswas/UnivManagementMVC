@@ -1,0 +1,61 @@
+﻿@using UniversityMnagementSystemMVC.Models
+@model IEnumerable<Result>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <label>Select Reg No</label>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownList("StudentId", null, "--Select--", new { @class = "form-control" })
+            </div>
+        </div>
+        @try
+        {
+            <div class="form-group" id="studentInfo">
+                @Html.Partial("_StudentViewPartial")
+            </div>
+        }
+        catch (Exception exception)
+        {
+           
+        }
+    </div>
+}
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div id="studentResult">
+    @Html.Partial("_ResultPartial")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(function () {
+            $("#StudentId").change(function () {
+                var id = $("#StudentId").val();
+                $("#studentInfo").load("StudentView", { id: id });
+            });
+        });
+    </script>
+    
+<script type="text/javascript">
+    $(function () {
+        $("#StudentId").change(function () {
+            var id = $("#StudentId").val();
+            $("#studentResult").load("_ResultPartial", { id: id });
+        });
+    });
+</script>
+    
+}

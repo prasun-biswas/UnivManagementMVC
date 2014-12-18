@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="83ad74b9ded44616953e9cf9e8e72efe" Name="Diagram1">
+        <EntityTypeShape EntityType="UniversityMvcDBModel.AllocateClassRoom" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.Course" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.CourseAssignToTeacher" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.Department" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.EnrollInACourse" Width="1.5" PointX="8.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.Result" Width="1.5" PointX="8.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.Teacher" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_AllocateClassRoom_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_AllocateClassRoom_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_Course_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_CourseAssignToTeacher_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_EnrollInACourse_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_Result_Course" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_CourseAssignToTeacher_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_CourseAssignToTeacher_Teacher" ManuallyRouted="false" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_Teacher_Department" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="UniversityMvcDBModel.Student" Width="1.5" PointX="3" PointY="6.125" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_Student_Department" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_EnrollInACourse_Student" />
+        <AssociationConnector Association="UniversityMvcDBModel.FK_Result_Student" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

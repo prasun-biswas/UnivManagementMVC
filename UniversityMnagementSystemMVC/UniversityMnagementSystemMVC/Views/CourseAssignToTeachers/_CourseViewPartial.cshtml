@@ -1,0 +1,21 @@
+﻿@model UniversityMnagementSystemMVC.Models.Course
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            <label>Course Name</label>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Credit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Credit)
+        </dd>
+    </dl>
+</div>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<UniversityMnagementSystemMVC.Models.AllocateClassRoom>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Class Schedule and room allocation</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <label>Select Department</label>
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.DropDownList("DeptId", null, "--Select--", new { @class = "form-control" })
+            </div>
+        </div>
+    </div>
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div id="allocateInfo">
+    @Html.Partial("_AllocateClassRoomPartial")
+</div>
+
+@using (Html.BeginForm("DeleteAll", "AllocateClassRooms",FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Unallocate rooms" class="btn btn-success form-group" />
+            </div>
+        </div>
+    </div>
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(function() {
+            $("#DeptId").change(function () {
+                var id = $("#DeptId").val();
+                $("#allocateInfo").load("AllocateClassRooms/_AllocateClassRoomPartial", { id: id });
+            });
+        });
+    </script>
+}

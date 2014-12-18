@@ -1,0 +1,58 @@
+﻿@model IEnumerable<UniversityMnagementSystemMVC.Models.CourseAssignToTeacher>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Course.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Department.Code)
+        </th>
+        <th>
+            <label>Teacher's Name</label>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Teacher.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.CourseAssignToTeacherId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.CourseAssignToTeacherId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.CourseAssignToTeacherId })
+            </td>
+        </tr>
+    }
+
+</table>
+
+@using (Html.BeginForm("DeleteAll", "CourseAssignToTeachers", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Unassign courses" class="btn btn-success form-group" />
+            </div>
+        </div>
+    </div>
+}

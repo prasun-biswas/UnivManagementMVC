@@ -1,0 +1,11 @@
+﻿@model UniversityMnagementSystemMVC.Models.CourseAssignToTeacher
+
+<label>Do you really want to assign this course to the selected teacher?</label>
+
+
+
+@Html.ActionLink("Yes", "CreateForceAC", "CourseAssignToTeachers", new { CourseId = Model.CourseId, DeptId = Model.DeptId, TeacherId = Model.TeacherId }, new { @class = "btn btn-primary" })
+
+@Html.ActionLink("No", "Create", "CourseAssignToTeachers", null, new { @class = "btn btn-success" })
+
+

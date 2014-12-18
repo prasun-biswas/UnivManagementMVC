@@ -1,0 +1,113 @@
+﻿@model UniversityMnagementSystemMVC.Models.AllocateClassRoom
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>AllocateClassRoom</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.DeptId, "Department Code", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("DeptId", null, "--Select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DeptId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CourseId, "Course Code", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CourseId", null, "--Select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CourseId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Day, "Day", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Day", new List<SelectListItem>
+                {
+                    new SelectListItem(){ Text = "Saturday", Value = "Saturday"},
+                    new SelectListItem(){ Text = "Sunday", Value = "Sunday"},
+                    new SelectListItem(){ Text = "Monday", Value = "Monday"},
+                    new SelectListItem(){ Text = "Tuesday", Value = "Tuesday"},
+                    new SelectListItem(){ Text = "Wednesday", Value = "Wednesday"},
+                    new SelectListItem(){ Text = "Thursday", Value = "Thursday"},
+                    new SelectListItem(){ Text = "Friday", Value = "Friday"}
+
+                }, "--Select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Day, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FromTime, "From", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("fHH",null,new{@style="width: 25px" ,placeholder="hh"}):
+                @Html.TextBox("fMM", null, new { @style = "width: 30px", placeholder = "mm" })
+                AM
+                @Html.RadioButton("fromAMPM","AM",true)
+                PM
+                @Html.RadioButton("fromAMPM","PM")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ToTime, "To", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("toHH", null, new { @style = "width: 25px", placeholder = "hh" }):
+                @Html.TextBox("toMM", null, new { @style = "width: 30px", placeholder = "mm" })
+                AM
+                @Html.RadioButton("toAMPM", "AM", true)
+                PM
+                @Html.RadioButton("toAMPM", "PM")
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RoomNo, "Room No", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("RoomNo", new List<SelectListItem>
+                {
+                    new SelectListItem(){ Text = "101", Value = "101"},
+                    new SelectListItem(){ Text = "102", Value = "102"},
+                    new SelectListItem(){ Text = "103", Value = "103"},
+                    new SelectListItem(){ Text = "104", Value = "104"},
+                    new SelectListItem(){ Text = "105", Value = "105"},
+                    new SelectListItem(){ Text = "106", Value = "106"},
+                    new SelectListItem(){ Text = "107", Value = "107"},
+                    new SelectListItem(){ Text = "108", Value = "108"}
+
+                }, "--Select--", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.RoomNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Allocate" class="btn btn-success" />
+                @if (ViewBag.noTime != null)
+                {
+                    <label style="color: red">@ViewBag.noTime</label>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

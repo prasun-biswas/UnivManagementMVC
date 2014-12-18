@@ -1,0 +1,36 @@
+﻿@model UniversityMnagementSystemMVC.Models.Student
+
+
+@if (Model != null)
+{
+    <div>
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                <label>Department Code</label>
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Department.Code)
+            </dd>
+
+        </dl>
+    </div>
+
+}
+

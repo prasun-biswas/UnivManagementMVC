@@ -1,0 +1,64 @@
+﻿@model UniversityMnagementSystemMVC.Models.CourseInformatonViewModel
+
+<table class="table">
+    <tr>
+        <th>
+            <label>
+                Code
+            </label>
+        </th>
+        <th>
+            <label>
+                Title
+            </label>
+        </th>
+        <th>
+            <label>
+                Semester
+            </label>
+        </th>
+        <th>
+            <label>
+                Assign To
+            </label>
+        </th>
+    </tr>
+ @if ((Model.Courses != null)&&(Model.Departments!=null)&&(Model.CourseAssignToTeachers!=null)&&(Model.Teachers!=null))
+ {
+     foreach (var item in Model.Courses)
+     {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Semester)
+            </td>
+            <td>
+                @foreach (var teach in Model.CourseAssignToTeachers)
+                {
+                    if (teach.CourseId == item.CourseId)
+                    {
+                        foreach (var source in Model.Teachers)
+                        {
+                            if (teach.TeacherId == source.TeacherId)
+                            {
+
+                                string name = source.Name.ToString();
+                                <p>
+                                    @name
+                                </p>
+                            }
+                        }
+                    }
+                }
+            </td>
+        </tr>
+     }
+ }
+</table>

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<UniversityMnagementSystemMVC.Models.AllocateClassRoom>
+
+<table class="table">
+    
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Course.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course.Name)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model=>model.Day)
+        </th>
+
+        <th>
+            <label>From</label>
+        </th>
+        <th>
+            <label>To</label>
+        </th>
+        <th>
+            <label>Room No</label>
+        </th>
+
+        <th></th>
+    </tr>
+
+    @if (true)
+    {
+        string code = string.Empty;
+        foreach (var item in Model)
+        {
+            <tr>
+                @if (item.Course.Code != code)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Course.Code)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Course.Name)
+                    </td>
+                    code = item.Course.Code;
+                }
+                
+                else
+                {
+                    <td></td>
+                    <td></td>
+                }
+                <td>
+                    @Html.DisplayFor(modelItem=>item.Day)
+                </td>
+                <td>
+                   @item.FromTime.ToString("hh:mm tt")
+                </td>
+                <td>
+                    @item.ToTime.ToString("hh:mm tt")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoomNo)
+                </td>
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.AllocateClassRoomId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.AllocateClassRoomId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.AllocateClassRoomId })
+                </td>
+            </tr>
+        }
+    }
+
+</table>
